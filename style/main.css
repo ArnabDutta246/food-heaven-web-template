@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+/* default design */
+.commonFlexClass,
+.book-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p,
+label {
+  color: #0d0c0c;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+input {
+  padding: 12px 22px;
+}
+small {
+  color: black;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+a,
+a:hover,
+a:visited {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: grey;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+}
+.gradient-button {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 20px;
+  max-width: 200px;
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: -4px 3px 14px 1px rgb(46 218 131 / 55%);
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section-header h1 {
+  margin-bottom: 20px;
+}
+/* section : home */
+#home {
+  background-image: url(../images/shapes/Frame\ 58.jpg);
+}
+nav {
+  padding: 20px 60px;
+  width: 90%;
+}
+.home-logo {
+  font-size: 22px;
+  font-weight: bolder;
+  font-family: "Maven Pro", sans-serif;
+  color: rgb(2, 28, 20);
+  letter-spacing: 1.3px;
+  text-transform: capitalize;
+}
+
+.home-intro,
+.about-info {
+  margin: auto;
+  padding: 10px 70px 0px 70px;
+}
+.home-intro-details,
+.about-details {
+  width: 50%;
+}
+.section-header h1,
+.home-intro-details h1,
+.about-details h1 {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bolder;
+  font-size: 73px;
+  text-transform: capitalize;
+}
+.home-intro-details h1 span {
+  color: green;
+}
+.home-intro-details p,
+.about-details p {
+  margin: 30px 10px;
+}
+.home-intro-image img {
+  height: 700px;
+}
+/* section : about */
+#about {
+  background-color: teal;
+  background-image: url(../images/shapes/7.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin: 100px;
+  border-radius: 20px;
+}
+
+.about-details {
+  width: 40%;
+}
+.about-info {
+  margin: auto;
+  padding: 10px 40px 0px 40px;
+}
+.about-details h1 {
+  color: white;
+  font-size: 56px;
+}
+.about-details p {
+  color: gainsboro;
+}
+.about-info-image img {
+  height: 577px;
+}
+
+/* section: review + recipe */
+.section-header h1 {
+  font-size: 45px;
+}
+.section-header p {
+  font-size: 14px;
+  color: grey;
+}
+#review,
+#recipe,
+#book {
+  background: whitesmoke;
+  padding: 80px;
+}
+#recipe {
+  background: rgb(239 239 239);
+}
+.all-reviews {
+  margin-top: 50px;
+  justify-content: center;
+}
+.review-card,
+.recipe-card {
+  background: white;
+  padding: 20px;
+  width: 350px;
+  margin: 10px 30px;
+  box-shadow: -9px 15px 10px 5px rgb(199 199 199 / 20%);
+}
+.review-card img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.review-card-about {
+  border-top: 1px solid whitesmoke;
+  padding-top: 10px;
+  justify-content: start;
+}
+.review-card-about div {
+  margin: 10px;
+}
+.recipe-card {
+  border-radius: 30px;
+}
+.recipe-card img {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+.recipe-ingredient {
+  justify-content: start;
+}
+.recipe-ingredient div {
+  margin: 10px;
+  padding: 3px 10px;
+  background: rgb(240, 240, 240);
+  border-radius: 30px;
+}
+/* section: book table */
+#book {
+  background-image: url(../images/food/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+#book .section-header {
+  background: rgb(255 255 255 / 16%);
+  padding: 12px 0px;
+}
+#book .section-header h1 {
+  color: whitesmoke;
+}
+#book .section-header p {
+  color: whitesmoke;
+}
+.book {
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.book-form {
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+}
+.book-form label {
+  color: white;
+}
+/* section: footer */
+.footer {
+  padding: 70px;
+  text-align: center;
+  background: black;
+}
+.footer h1 {
+  color: white;
+}
+.footer h1 span {
+  color: #11998e;
+}
+.footer-contact-info {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer p,
+.footer .footer-contact-info small {
+  color: whitesmoke;
+  margin: 5px;
+}
